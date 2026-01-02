@@ -1,0 +1,11 @@
+name: test-actions
+on: push
+jobs:
+    first_job:
+        runs-on: ubuntu-latest
+        steps:
+            - name: checkout repo
+              uses: actions/checkout@v4
+            - name: read the file
+              run: cat file.txt
+    
